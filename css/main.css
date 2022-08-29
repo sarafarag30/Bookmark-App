@@ -1,0 +1,13 @@
+body{
+    background: linear-gradient(45deg, rgb(45, 198, 212), #f2f);
+}
+label{
+    color: #FFF;
+    font-weight: bold;
+    font-size: 20px;
+}
+#addBtn{
+    background-color:blueviolet;
+    font-size: 20px;
+    font-weight: bold;
+}

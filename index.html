@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Sara Farag">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <title>BOOKMARKER</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <section id="bookmarkForm">
+      <div class="container">
+        <div class="form-container d-flex justify-content-center">
+          <div class="w-75 py-5">
+            <div class="form-header text-center text-white mb-4">
+              <h1><i class="fas fa-bookmark px-2"></i>Bookmarker</h1>
+              <p class="ml-4">Bookmark your favorite sites.</p>
+            </div>
+            <div class="form-group">
+              <label>Site Name <span class="text-danger"> *</span></label>
+              <input type="text" class="form-control" id="bookmarkName" placeholder="Bookmark Name"/>
+              <div class="alert alert-danger d-none" id="bookmarkNameAlert">BookmarkName must start with capital letters , containes from 5 to 10 characters.</div>
+            </div>
+            <div class="form-group">
+              <label>Site URL <span class="text-danger"> *</span></label>
+              <input type="text" class="form-control" id="bookmarkUrl" placeholder="Bookmark URL"/>
+              <div class="alert alert-danger d-none" id="bookmarkUrlAlert">Bookmark URL must start with "www." and ends with ".com".</div>
+            </div>
+            <div class="form-group mt-5">
+              <p class="d-none text-center" id="fillMsg">Please fill the required inputs.</p>
+              <a href="#bookmark-card" class="text-decoration-none" id="bookmarkCardHref">
+                <button class="btn form-control" id="addBtn" disabled>Add Bookmark</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="bookmarkContents">
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <div class="w-75">
+            <div class="form-group mb-5">
+              <input type="text" id="search" class="form-control" placeholder="Search here."/>
+            </div>
+            <div id="bookmarkCards">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <hr>
+
+    <section id="copyRight">
+      <div class="container">
+        <div class="content">
+          <p class="text-center text-white">CopyRight &copy; 2019 Bookmarker</p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
+
